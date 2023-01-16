@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanier Store</title>
+    <title>Jp Store</title>
     <link rel="stylesheet" href="style.css">
 
      <!--=============== FAVICON ===============-->
-     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="" type="image/x-icon">
 
      <!--=============== BOXICONS ===============-->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -30,25 +30,25 @@
         <div class="right-login">
             <div class="card-login">
 
-                <form class="login-01" action="config.php" method="POST">
+                <form class="login-01" method="POST" action="login/check">
 
                 <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="nome">Seu Nome</label>
-                    <input type="text" name="nome" placeholder="Nome" required>
-                </div>
 
                 <div class="textfield">
                     <label for="usuario">Seu Email</label>
-                    <input type="text" name="usuario" placeholder="Email" required>
+                    <input type="email" name="e-mail" placeholder="e-mail" required>
                 </div>
 
                 <div class="textfield">
                     <label for="senha">Sua Senha</label>
-                    <input type="password" name="senha" placeholder="Senha" required>
+                    <input type="password" name="password" placeholder="Senha" required>
                 </div>
+                <button class="btn-login">Logar</button>
+                <span></span>
 
-                <input type="submit" value="login" class="btn-login" id="btnn">
+
+
+                <!--<input type="submit" value="login" class="btn-login" id="btnn">-->
                 </form>
             </div>
         </div>
