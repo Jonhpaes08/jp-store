@@ -2,10 +2,10 @@
   "name": "paypal-standard-integration",
   "description": "Sample Node.js web app to integrate PayPal Standard Checkout for online payments",
   "version": "1.0.0",
-  "main": "server/jp-store.js",
+  "main": "server/server.js",
   "type": "module",
   "scripts": {
-    "start": "node server/jp-store.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
