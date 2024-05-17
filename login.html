@@ -2,70 +2,60 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jp Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login | Jp Store</title>
 
-     <!--=============== FAVICON ===============-->
-     <link rel="shortcut icon" href="" type="image/x-icon">
-
-     <!--=============== BOXICONS ===============-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-     <!--=============== SWIPER CSS ===============--> 
-     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-     
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="login.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="main-login">
+    <div class="login-container">
         <div class="left-login">
-            <h1>Faça login <br>E acesse a nossa loja!</h1>
-            <img src="assets/img/login.svg" class="left-login-image" alt="loja-animacao">
+            <h1>Faça login e acesse nossa loja!</h1>
+            <img src="assets/img/login.svg" class="left-login-image" alt="Ilustração de login">
         </div>
-
+        
         <div class="right-login">
-            <div class="card-login">
-
-                <form class="login-01" method="POST" action="login/check">
-
-                <h1>LOGIN</h1>
-
-                <div class="textfield">
-                    <label for="usuario">Seu Email</label>
-                    <input type="email" name="e-mail" placeholder="e-mail" required>
+            <form class="login-form" method="POST" action="login/check"> 
+                <h2 class="login-title">LOGIN</h2>
+                <div class="form-group">
+                    <label for="email">Seu Email</label>
+                    <input type="email" id="email" name="e-mail" placeholder="exemplo@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Sua Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
                 </div>
 
-                <div class="textfield">
-                    <label for="senha">Sua Senha</label>
-                    <input type="password" name="password" placeholder="Senha" required>
-                </div>
-                <button class="btn-login">Logar</button>
-                <span></span>
+                <button type="submit" class="btn-login">Logar</button>
+            </form>
 
-
-
-                <!--<input type="submit" value="login" class="btn-login" id="btnn">-->
-                </form>
+            <div class="login-info">
+                <p>Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+                <p><a href="#">Esqueceu sua senha?</a></p>
             </div>
         </div>
     </div>
-    <div>
-        <footer class="footer section">
-                <div class="footer__container container grid">
-                    <div class="footer__content">
-                        <h3 class="footer__title">Observações</h3>
-                        <ul class="footer__list">
-                            <li><strong>Sobre esse site.</strong> <br> Esse site é apenas uma amostra de login, você pode clicar no butão login e seguir para o site <strong>Lanier Store</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="footer__copy">&#169; Jonh Alex Paz de Lima</span>
-            </footer>
-    </div>
+    
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Observações</h3>
+                <p>Este site é apenas uma amostra de login.</p>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; Jonh Alex Paz de Lima</span>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
