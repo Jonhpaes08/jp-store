@@ -66,7 +66,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
     width: .6rem;
@@ -76,103 +75,117 @@ html {
   ::-webkit-scrollbar-thumb {
     background: hsl(0, 0%, 17%);
   }
+  
 
-/* Estilos específicos para o carrinho */
-#carrinho {
-    max-width: 900px; /* Largura máxima do carrinho */
-    margin: var(--header-height) auto 2rem; /* Margem superior após o cabeçalho fixo */
-    padding: 2rem;
-    background-color: var(--container-color);
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  #carrinho h2 {
-    font-size: var(--h2-font-size);
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--title-color); /* Cor do título */
-  }
-  
-  #itens-carrinho {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .item-carrinho { /* Classe para cada item do carrinho */
+/* Estilos para a página de login */
+.login-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
+    min-height: 100vh;
+    background-color: var(--body-color);
   }
   
-  .item-carrinho img {
-    max-width: 80px;
+  .left-login,
+  .right-login {
+    width: 50%;
+    padding: 2rem;
+  }
+  
+  .left-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .left-login h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+    color: var(--title-color);
+  }
+  
+  .left-login-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
     height: auto;
-    margin-right: 1rem;
   }
   
-  .item-info {
-    flex: 1; /* Ocupa o espaço restante */
+  .right-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .item-nome {
-    font-weight: var(--font-medium);
+  .login-form {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .login-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
     margin-bottom: 0.5rem;
   }
   
-  .item-preco {
-    color: var(--first-color);
-  }
-  
-  .item-quantidade {
-    display: flex;
-    align-items: center;
-  }
-  
-  .item-quantidade button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin: 0 0.5rem;
-  }
-  
-  .item-remover {
-    color: var(--first-color); /* Cor do botão de remover */
-    cursor: pointer;
-    margin-left: auto; /* Alinha o botão à direita */
-  }
-  
-  #total-carrinho {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-bold);
-    text-align: right;
-    margin-top: 2rem;
-  }
-  
-  #finalizar-compra {
-    display: block;
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+  
+  .btn-login {
+    margin: 5px;
     background-color: var(--first-color);
     color: white;
     border: none;
+    padding: 5px;
     border-radius: 5px;
-    font-weight: var(--font-medium);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
   
-  #finalizar-compra:hover {
-    background-color: var(--button-color-alt);
+  .login-info {
+    margin-top: 1rem;
+    text-align: center;
   }
   
-  /* Responsividade */
+  .login-info a {
+    color: var(--first-color);
+  }
+  
+
+  .footersection{
+    padding:8px;
+  }
+  .footer__copy {
+    display: block;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+  }
+  
+  /* Responsividade para telas menores */
   @media (max-width: 768px) {
-    #carrinho {
-      max-width: 90%; /* Ocupa mais espaço em telas menores */
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .left-login,
+    .right-login {
+      width: 100%;
+      padding: 1rem;
     }
   }
-  
