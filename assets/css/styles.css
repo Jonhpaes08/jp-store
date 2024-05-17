@@ -1175,8 +1175,8 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   text-align: left;
+  align-items: center;
 }
 
 .left-login h1 {
@@ -1227,11 +1227,12 @@ body.dark-theme {
 }
 
 .btn-login {
-  /* Estilos do botão de login */
+  margin: 5px;
   background-color: var(--first-color);
   color: white;
   border: none;
-  
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .login-info {
@@ -1256,8 +1257,16 @@ body.dark-theme {
     padding: 1rem;
   }
 }
-
-
+.footersection{
+  padding:8px;
+}
+.footer__copy {
+  display: block;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
 
 /* Responsividade */
 
