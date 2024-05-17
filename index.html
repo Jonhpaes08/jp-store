@@ -486,22 +486,25 @@
             <span class="footer__copy">&#169; Jonh Alex Paz de Lima</span>
         </footer>
 
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up"> 
-            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
-        </a>
+        
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
 
-        <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-
-        <!--=============== CARRINHO ===============-->
-        <script src="assets/js/carrrinho.js"></script>
-
-        <div class="loader">
-            <img src="assets/img-jp-sport/preloader.gif" alt="">
-         </div>
+        <script src="assets/js/carrinho.js"></script>
+        <script src="/server.js"></script>
+        <script>
+            function loader() {
+                document.querySelector('.loader').style.display = 'none';
+            }
+    
+            function fadeOut() {
+                setInterval(loader, 2000);
+            }
+    
+            window.onload = fadeOut;
+        </script>
     </body>
 </html>

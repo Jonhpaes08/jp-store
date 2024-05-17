@@ -1,14 +1,84 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="carrinho.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.header {
+		display: contents;
+		/* width: 100%; */
+		background: transparent;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: var(--z-fixed);
+		transition: .4s;
+		}
+	</style>
 </head>
 <body>
-<div id="carrinho">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img-jp-sport/jp store (Logo).svg" alt="" class="nav__logo-icon" width="22px">
+                Jp Store
+            </a>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Inicio</a>
+                    </li>
+                    </ul>
 
-</div>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="carrinho">
+            <h2 class="carrinho__title">Carrinho de Compras</h2>
+
+            <div id="itens-carrinho"></div>
+
+            <div class="carrinho__total">
+                <p>Subtotal: <span id="subtotal-carrinho">R$ 0.00</span></p>
+                <p>Frete: <span id="frete-carrinho">R$ 0.00</span></p>
+                <hr>
+                <p class="total-texto">Total: <span id="total-carrinho">R$ 0.00</span></p>
+            </div>
+
+            <button id="finalizar-compra" class="button">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <script src="assets/js/carrinho.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="/server.js"></script>
 </body>
 </html>
