@@ -1,1 +1,17 @@
 theme: jekyll-theme-dinky
+```
+## 2.2.2
+### 2.2.2.1
+```yaml
+# Path: _config.yml
+theme: jekyll-theme-minimal
+```
+###
+```yaml
+# Path: _config.yml
+theme: jekyll-theme-modernist
+```
+###
+```yaml
+# Path: _config.yml
+theme: jekyll-theme-primer

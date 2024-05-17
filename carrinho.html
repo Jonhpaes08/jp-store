@@ -2,33 +2,32 @@
 <html>
 <head>
 	<title>Carrinho de Compras</title>
-	<script src="carrinho.js"></script>
     <link rel="stylesheet" href="assets/css/carrinho.css">
+	
 </head>
-<body>
-	<h1 class="titulo">Carrinho de Compras</h1>
+<body> <!-- Carrinho página -->
+<div id="carrinho"> 
 
-	<ul id="produtos">
-		<li>
-			<span>Camiseta</span>
-			<button onclick="adicionarAoCarrinho('Camiseta', 25.00)">Adicionar ao Carrinho</button>
-		</li>
-		<li>
-			<span>Calça Jeans</span>
-			<button onclick="adicionarAoCarrinho('Calça Jeans', 50.00)">Adicionar ao Carrinho</button>
-		</li>
-		<li>
-			<span>Tênis</span>
-			<button onclick="adicionarAoCarrinho('Tênis', 75.00)">Adicionar ao Carrinho</button>
-		</li>
-	</ul>
+	<h2>Carrinho de Compras</h2>
+		<ul id="itens-carrinho"></ul>
+		<p>Total: <span id="total-carrinho">R$ 0.00</span></p>
+		<button id="finalizar-compra">Finalizar Compra</button>
+</div>
 
-	<h2>Itens no Carrinho</h2>
-
-	<ul id="carrinho"></ul>
-
-	<p>Total: R$<span id="total">0.00</span></p>
-
-	<button onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
+        <!--=============== BASE ===================-->
+        <script src="/assets/base/base.js"></script>
+        <!--=============== CARRINHO ===============-->
+        <script src="assets/js/carrinho.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+		<!--=============== SCROLL REVEAL ===============-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<!--=============== SWIPER JS ===============-->
+		<script src="assets/js/swiper-bundle.min.js"></script>
+		
 </body>
 </html>

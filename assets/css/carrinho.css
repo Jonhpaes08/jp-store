@@ -1,16 +1,57 @@
-* {
-    padding: 0px;
-    margin: 0px;
+/* Importa as fontes personalizadas (ajuste os caminhos conforme necessário) */
+@font-face {
+    font-family: 'NomeDaSuaFonte';
+    src: url('../fonts/NomeDaSuaFonte.woff2') format('woff2'),
+         url('../fonts/NomeDaSuaFonte.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-body {
-    background-color: white;
+
+/* Estilos gerais do carrinho */
+#carrinho {
+    font-family: 'NomeDaSuaFonte', sans-serif; /* Usa a fonte personalizada */
+    max-width: 800px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo (ajuste conforme seu tema) */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#carrinho h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
-h1 {
+
+#itens-carrinho {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#itens-carrinho li {
+    margin-bottom: 10px;
+}
+
+#total-carrinho {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#finalizar-compra {
+    /* Estilos do botão (ajuste conforme seu tema) */
+    background-color: #4CAF50; /* Cor de fundo do botão */
     color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    margin: 15px;
-    display: inline-block;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #carrinho {
+        padding: 10px;
+    }
 }
