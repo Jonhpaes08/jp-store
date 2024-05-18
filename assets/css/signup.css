@@ -77,8 +77,8 @@ html {
     background: hsl(0, 0%, 17%);
   }
 
-/* Estilos para a página de redefinição de senha */
-.reset-container {
+/* Estilos para a página de cadastro */
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,13 +86,13 @@ html {
     background-color: var(--body-color);
 }
 
-.left-reset,
-.right-reset {
+.left-signup,
+.right-signup {
     width: 50%;
     padding: 2rem;
 }
 
-.left-reset {
+.left-signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,28 +100,24 @@ html {
     align-items: center;
 }
 
-.left-reset h1 {
+.left-signup h1 {
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
     color: var(--title-color);
 }
 
-.left-reset p {
-    margin-bottom: 2rem;
-}
-
-.left-reset-image {
+.left-signup-image {
     max-width: 100%;
     height: auto;
 }
 
-.right-reset {
+.right-signup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.reset-form {
+.signup-form {
     background-color: var(--container-color);
     padding: 2rem;
     border-radius: 8px;
@@ -129,24 +125,26 @@ html {
     width: 80%;
 }
 
-.reset-title {
+.signup-title {
     text-align: center;
     margin-bottom: 1rem;
 }
 
-/* Reutilização de estilos do formulário de login/cadastro */
+/* Reutilização dos estilos da página de login */
 .form-group,
 .form-group label,
-.form-group input[type="email"] {
-    /* Mesmos estilos do login.css e signup.css */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    /* Mesmos estilos da página de login */
     width: 100%;
     padding: 0.8rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
 
-.btn-reset {
-    /* Estilos do botão de redefinir senha (semelhantes aos outros botões) */
+.btn-signup {
+    /* Estilos do botão de cadastro (semelhantes ao botão de login) */
     margin: 5px;
     background-color: var(--first-color);
     color: white;
@@ -156,23 +154,23 @@ html {
     cursor: pointer;
 }
 
-.reset-info {
+.signup-info {
     margin-top: 1rem;
     text-align: center;
 }
 
-.reset-info a {
+.signup-info a {
     color: var(--first-color);
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-    .reset-container {
+    .signup-container {
         flex-direction: column;
     }
 
-    .left-reset,
-    .right-reset {
+    .left-signup,
+    .right-signup {
         width: 100%;
         padding: 1rem;
     }
